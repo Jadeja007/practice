@@ -22,6 +22,14 @@
 
 //FOR LOOP
 // let x=0;
-for (let x=2; x <= 6; x++){
-    console.log(x);
-}
+// for (let x=2; x <= 6; x++){
+//     console.log(x);
+// }
+
+//do while
+// let i=0;
+// do{
+//     i++;
+//     console.log(i);
+// }while(i<5)
+
