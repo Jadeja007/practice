@@ -62,7 +62,7 @@ async function sequentialStart(){ //Work accordingly to sequences
     console.log("fast");
 }
 
-async function concurrentStart(){
+async function concurrentStart(){ //both start at the same time but results get accordingly to await order
     console.log("=CONCURRENT START with await=");
 
     const slow = resolveAfter2Sec();
