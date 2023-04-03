@@ -38,6 +38,24 @@ obj3.c = 5;
 
 console.log(obj4)
 
+//2. Object.entries()    --> converts JS objects to an array of arrays
+const data = {name : "foo", age: 40};
+console.log(Object.entries(data))
+
+//On Primitive Values     ---> string is only have own enumberable properties, While other primitives return empty Array.
+console.log(Object.entries("foo"))   
+console.log(Object.entries(100))
+
+//Object.keys() && Object.values()
+const object1 = {
+    a: 'somestring',
+    b: 42,
+    c: false
+  };
+console.log(Object.keys(object1));
+
+console.log(Object.values(object1))
+
 
 
 
