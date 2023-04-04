@@ -57,3 +57,47 @@ function isPrime(num){
       return num > 1
 }
 console.log(a.filter(isPrime))
+
+//ex to filter array content based on search criteria.
+const fruits = ["apple", "banana", "grapes", "mango", "orange"];
+
+function filterSearch(are, query){
+     return are.filter((item)=> item.toLowerCase().includes(query.toLowerCase()))
+}
+
+console.log(filterSearch(fruits, "an"))
+
+// // .flat()
+// const arr12 = [1, 2];
+// // let result = arr12.flat();
+// console.log(typeof(arr12))
+// console.log([1,2,3,[4,5]].flat());
+
+// .flatmap()
+// const arr21 = [1,2,3];
+// console.log(arr21.flatMap(i => i === 2 ? [2,2] : 1))
+
+// .forEach()
+const items = ["i1", "i2"]
+items.forEach(i => console.log(i))
+console.log(items.map(i => i+1))
+console.log(items.forEach(i => i+1))
+
+//Converting for loop ---> forEach
+const itm = ["item1", "item2", "item3"];
+const emp = [];
+
+for (let i=0 ; i<itm.length; i++){   
+   emp.push(itm[i]) 
+}
+console.log(emp)
+//===>>  
+itm.forEach(item => emp.push(item))
+
+// .indexOf()
+console.log(itm.indexOf("item2"));
+console.log(itm.indexOf("2"))
+console.log(itm.indexOf("item2", 3))
+
+
+console.log([1,2,3,[4,5]].flat());
