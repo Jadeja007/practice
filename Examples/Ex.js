@@ -476,3 +476,58 @@ function testStr(str){
   return (/a...b/).test(str) || (/b...a/).test(str)
 }
 console.log(testStr("Chainsbreak"));
+
+//54 & 55 
+
+//56. divide two positive numbers and return the result as string with properly formatted commas.
+function divide2Val(x, y) {
+  return Math.round(x/y).toString().split("")
+}
+console.log(divide2Val(800, 6))
+
+//57  create a new string of specified copies (positive number) of a given string. 
+function copies(str, n) {
+  return (n>0)  ? str.repeat(n) : false;
+}
+console.log(copies("abc", 2))
+
+//58
+function copiesLast3Char(str) {
+  if (str.length >= 3) {
+    return  str.substring(str.length - 3).repeat(4)
+  } else {
+    console("error")
+  }
+}
+console.log(copiesLast3Char("JavaScript"))
+
+//59  extract the first half of a string of even length
+function halfPrint(str) {
+  return (str.length%2 === 0) ? str.substring(0, (str.length)/2) : str
+}
+console.log(halfPrint("JavaScript"))
+
+//60. create a new string without the first and last character of a given string
+function stringWithoutFB(str) {
+  return str.substring(1, str.length-1)
+}
+console.log(stringWithoutFB("JavaScript"));
+
+//61. concatenate two strings except their first character
+function concat2Str(str1, str2) {
+  return str1.substring(1) + str2.substring(1)
+}
+console.log(concat2Str("PHP","JS"));
+
+//62.  move last three character to the start
+function moveLast3Char(str) {
+  return str.substring(str.length - 3) + str.substring(0,3)
+}
+console.log(moveLast3Char("Python"));
+
+//63. middle three characters of a given string of odd length
+function stringMiddle3Char(str){
+  return str.slice((str.length)/2 - 1, (str.length)/2 + 2)
+}
+console.log(stringMiddle3Char("Exercises"));
+
