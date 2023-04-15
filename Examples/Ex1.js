@@ -131,3 +131,31 @@ function palidrome(str) {
 console.log(palidrome("aadaa"));
 
 //9. 
+let i = 0;
+do {
+  i += 1;
+  console.log("x", i);
+} while (i < 5);
+
+//arr1 subset of arr2
+function isSbuset(arr2, arr1) {
+  return arr1.every(element => arr2.includes(element))
+}
+console.log(isSbuset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6]));
+
+//isPrime
+const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+function isPrime(num) {
+  for (let i=2; i<num; i++) {
+    if (num%i === 0) {
+      return false
+    }
+  }
+  return num > 1;
+}
+console.log(array.filter(isPrime));
+
+//
+const arx = [1, 2, 3];
+// console.log(ar.reverse().entries().next());
+console.log(arx.entries().next().value);
